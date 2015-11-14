@@ -80,7 +80,7 @@ After we get the tokens from the lexer, we feed them to the parser or the syntax
 The shell language grammer is defined as follows in [Backus–Naur form](https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form):
 
 ```c
-<command line>	::=  	<job>
+<command line>	::	<job>
 		|	<job> '&'
 		| 	<job> '&' <command line>
 		|	<job> ';'
@@ -89,7 +89,7 @@ The shell language grammer is defined as follows in [Backus–Naur form](https:/
 <job>		::=	<command>
 		|	< job > '|' < command >
 					        
-<command	 ::=	<simple command>
+<command	::=	<simple command>
 	        |	<simple command> '<' <filename>
 	        |	<simple command> '>' <filename>
 					        
