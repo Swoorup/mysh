@@ -115,7 +115,6 @@ int lexer_build(char* input, int size, lexer_t* lexerbuf)
 	
 	char c;
 	int state = STATE_GENERAL;
-	char quote;
 	
 	do
 	{
