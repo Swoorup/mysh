@@ -46,6 +46,7 @@ int main()
 
 		// lexically analyze and build a list of tokens
 		lexer_build(linebuffer, len, &lexerbuf);
+		free(linebuffer);
 
 		// parse the tokens into an abstract syntax tree
 		if (!lexerbuf.ntoks || parse(&lexerbuf, &exectree) != 0) {
