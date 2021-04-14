@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -m32
+CFLAGS = -m64
 
 default: shell
 
